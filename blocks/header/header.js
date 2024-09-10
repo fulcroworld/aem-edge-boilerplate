@@ -192,12 +192,12 @@ export default async function decorate(block) {
   });
 
   const questionIcon = document.createElement('img');
-  questionIcon.src = 'https://img.icons8.com/ios-filled/50/help.png';
+  questionIcon.src = '../../icons/circle-question-solid.svg';
   questionIcon.alt = 'Help';
   questionIcon.className = 'nav-icon';
 
   const phoneIcon = document.createElement('img');
-  phoneIcon.src = 'https://img.icons8.com/ios-filled/50/ringer-volume.png';
+  phoneIcon.src = '../../icons/phone-volume-solid.svg';
   phoneIcon.alt = 'Contact';
   phoneIcon.className = 'nav-icon';
 

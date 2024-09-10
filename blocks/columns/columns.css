@@ -7,16 +7,26 @@
 .columns  h1 {
   font-size: 30px;
   font-family: Roboto, sans-serif;
+  margin-bottom: -7px;
 }
 
 .columns h3 {
   font-size: 15px;
   font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
-.columns img {
-  width: 100%;
+.columns p {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #6A738A;
 }
+
+/* .columns img {
+  width: 100%;
+} */
 
 .columns > div > div {
   order: 1;
