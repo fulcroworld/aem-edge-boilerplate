@@ -161,8 +161,68 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
+  // console.log(typeof nav );
+  // console.log(nav );
+
+  const navBar = document.createElement('div');
+  navBar.id = 'primary-nav';
+  
+  const leftSection = document.createElement('div');
+  leftSection.className = 'nav-left';
+  
+  const rightSection = document.createElement('div');
+  rightSection.className = 'nav-right';
+  
+  const navItems = [
+    { text: 'MUTUAL FUND', className: 'active' },
+    { text: 'INDEX FUND' },
+    { text: 'ETF' },
+    { text: 'PMS' },
+    { text: 'AIF' },
+    { text: 'PARTNER' },
+    { text: 'INVESTOR EDUCATION' },
+    { text: 'INTERNATIONAL BUSINESS' }
+  ];
+  
+  navItems.forEach(item => {
+    const navItem = document.createElement('div');
+    navItem.className = `nav-item ${item.className || ''}`;
+    navItem.textContent = item.text;
+    leftSection.appendChild(navItem);
+  });
+  
+ 
+  const questionIcon = document.createElement('img');
+  questionIcon.src = 'https://img.icons8.com/ios-filled/50/help.png'; 
+  questionIcon.alt = 'Help';
+  questionIcon.className = 'nav-icon';
+  
+  
+  const phoneIcon = document.createElement('img');
+  phoneIcon.src = 'https://img.icons8.com/ios-filled/50/ringer-volume.png'; 
+  phoneIcon.alt = 'Contact';
+  phoneIcon.className = 'nav-icon';
+  
+  
+  const select = document.createElement('select');
+  select.className = 'nav-item';
+  const option = document.createElement('option');
+  option.textContent = 'Group Websites';
+  select.appendChild(option);
+  
+ 
+  rightSection.appendChild(questionIcon);
+  rightSection.appendChild(phoneIcon);
+  rightSection.appendChild(select);
+  
+ 
+  navBar.appendChild(leftSection);
+  navBar.appendChild(rightSection);
+  
+  navWrapper.append(navBar);
+
+ 
   navWrapper.append(nav);
   block.append(navWrapper);
 
 }
-

@@ -1,6 +1,17 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  
+}
+
+.columns  h1 {
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+}
+
+.columns h3 {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
 }
 
 .columns img {
@@ -17,6 +28,8 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  width: 75%;
+  margin: 0 auto;
 }
 
 @media (width >= 900px) {
