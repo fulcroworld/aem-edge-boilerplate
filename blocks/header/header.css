@@ -431,7 +431,7 @@ select.nav-item {
   }
 }
 
-@media screen and (width<= 1400px) {
+@media screen and (width<= 1500px) {
   #primary-nav {
     width: 85vw; 
   }
