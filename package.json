@@ -25,5 +25,10 @@
     "eslint-plugin-import": "2.29.1",
     "stylelint": "16.8.2",
     "stylelint-config-standard": "36.0.1"
+  },
+  "dependencies": {
+    "@adobe/aem-boilerplate": "file:",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
