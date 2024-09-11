@@ -1,0 +1,111 @@
+.cards-horizontal * {
+  box-sizing: border-box;
+}
+
+.cards-horizontal > div {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-top: 2.5rem;
+}
+
+@media screen and (width >= 768px) {
+  .cards-horizontal > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+.cards-horizontal > div > a {
+  --tw-border-opacity: 1;
+
+  align-items: center;
+  border: 1px solid rgb(114 114 114 / var(--tw-border-opacity));
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  width: 100%
+}
+
+.cards-horizontal > div > a,
+.cards-horizontal > div > a:hover {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cards-horizontal-content-left {
+  align-items: center;
+  display: flex;
+  font-size: 1.25rem;
+  gap: 1rem;
+  line-height: 1.5rem;
+  max-width: 75%;
+}
+
+.cards-horizontal-content-left p {
+  --tw-text-opacity: 1;
+
+  color: rgb(34 31 30 / var(--tw-text-opacity));
+  font-family: var(--body-font-family);
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin: 0;
+}
+
+@media screen and (width >= 768px) {
+  .cards-horizontal-content-left p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.cards-horizontal-card-image {
+  flex-shrink: 0;
+  height: 2rem;
+  position: relative;
+  width: 2rem;
+}
+
+@media screen and (width >= 768px) {
+  .cards-horizontal-card-image {
+    height: 52px;
+    width: 52px;
+  }
+}
+
+.cards-horizontal-card-image picture {
+  color: transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;  
+  width: 100%;  
+}
+
+.cards-horizontal-content-right {
+  flex-shrink: 0;
+  height: 1.25rem;
+  position: relative;
+  width: 1.25rem;
+}
+
+@media screen and (width >= 768px) {
+  .cards-horizontal-content-right {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+.cards-horizontal-content-right picture {
+  bottom: 0;
+  color: transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
