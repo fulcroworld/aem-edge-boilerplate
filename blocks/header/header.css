@@ -78,7 +78,7 @@ header nav .nav-hamburger button {
     border: 0;
     border-radius: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background:none;
     color: inherit;
     overflow: initial;
     text-overflow: initial;
@@ -428,6 +428,13 @@ select.nav-item {
 @media screen and (width<= 768px) {
   #primary-nav {
     display: none;
+  }
+
+  header nav .nav-brand img {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+      
   }
 }
 

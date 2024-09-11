@@ -36,3 +36,17 @@
         padding: 40px 32px;
     }
 }
+
+@media (width <= 768px) {
+    .hero h1 {
+        display: none;
+    }
+
+    .hero picture {
+        object-fit: cover;
+    }
+
+    .hero img {
+        object-fit: cover;
+    }
+}
